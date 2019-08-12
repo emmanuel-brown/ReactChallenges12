@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #131515;
+  color: #39A0ED;
+}
+
+/* ------------------- Start of Mobile Version ------------------ */
+@media only screen and (min-width: 0px) {
+  /* ------------------- Beginning of Navigation ------------------ */
+  #navigation {
+    margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #0FF4C6;
+    background-color: #131515;
+    position: relative;
+    text-align: center;
+  }
+  #navigation #title h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  #navigation #navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #navigation #navigator div {
+    margin: 0 auto;
+  }
+  #navigation #navigator div p a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-top: 0;
+    margin-top: 0;
+    padding-right: 29%;
+    padding-left: 29%;
+    -webkit-transform: translate(-2.7%);
+            transform: translate(-2.7%);
+  }
+}
+
+/* ------------------- End of Mobile Version ------------------ */
+/* ------------------- Start of Navigation ------------------ */
+@media only screen and (min-width: 768px) {
+  /* ------------------- Beginning of Navigation ------------------ */
+  #navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    opacity: .8;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    color: #0FF4C6;
+    background-color: #131515;
+  }
+  #navigation #title h1 {
+    font-size: 30px;
+    margin: 8px 0;
+  }
+  #navigation #navigator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #navigation #navigator div {
+    padding: 17px 30px;
+    border-left: gray solid 1px;
+  }
+  #navigation #navigator div p a {
+    padding: 0px;
+  }
+  #navigation #navigator div:hover {
+    background-color: #2B2C28;
+  }
+}
+
+/* ------------------- End of Navigation ------------------ */
+/* ------------------- End of Desktop Version ------------------ */
+/*# sourceMappingURL=navBar.css.map */

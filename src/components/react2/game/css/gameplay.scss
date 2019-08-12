@@ -1,0 +1,54 @@
+@media only screen and (min-width: 0px){
+    #difficulty{
+        display: flex;
+        flex-direction: column;
+        .option{
+            display: block;
+            position: relative;
+            height: 150px;
+            border: #7D8491 solid 4px;
+            background-color: #574B60;
+            box-shadow: inset 0px 0px 4px 4px black ;
+            .text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .option:hover{
+            background-color: #7D8491;
+            cursor: pointer;
+        }
+    }
+    #play{
+        margin: 10px 20%;
+        text-align: center;
+        form{
+            padding: 4px 22%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (min-width: 560px){
+    #difficulty{
+        flex-direction: row;
+        .option{
+            width: 100%;
+        }
+    }
+    #PopUp{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #574B60;
+        padding: 100%;
+        p{
+            font-size: 100px;
+            text-align: center
+        }
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Emmanuel",
+        "lastName": "Brown",
+        "phoneNumber": "000-000-0000",
+        "status": true,
+        "point": "0"
+    },
+    {
+        "firstName": "Jonathan",
+        "lastName": "Morales",
+        "phoneNumber": "000-000-0000",
+        "status": "false",
+        "point": "1"
+    },
+    {
+        "firstName": "Thomas",
+        "lastName": "Tilver",
+        "phoneNumber": "000-000-0000",
+        "status": "false",
+        "point": "2"
+    }
+]

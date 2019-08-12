@@ -40,6 +40,8 @@ class Index extends React.Component{
             <div>
                 <VeryEasy name="Emmanuel" lastName="brown"/>
                 {contactList}
+                <h1><a href="./React2">To see the React2 challenges VeryEasy to Hard</a></h1>
+                <h1><a href="./React2/game">To see the React2 Guessing Game</a></h1>
             </div>
         );
     }

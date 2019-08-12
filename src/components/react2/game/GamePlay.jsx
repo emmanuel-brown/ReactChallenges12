@@ -21,6 +21,8 @@ class GamePlay extends React.Component{
             guessesTotal: 0,
             eHighScore: 0,
             sHighScore: 0,
+            eWins: 0,
+            sWins: 0,
             winTotal: 0,
         }
         this.handleInputChange = this.handleInputChange.bind(this)
@@ -62,7 +64,7 @@ class GamePlay extends React.Component{
             })
         }
         
-        let {input, guessesTotal, winTotal, guessesInRound, highScore, finishedFirstGuess, standard, sHighScore, eHighScore} = this.state;
+        let {input, guessesTotal, winTotal, eWins, sWins, guessesInRound, highScore, finishedFirstGuess, standard, sHighScore, eHighScore} = this.state;
         let number = this.state.standard ? this.state.standardNum : this.state.expertNum
         if (input == number){
             winTotal += 1
@@ -74,6 +76,11 @@ class GamePlay extends React.Component{
                 } else{
                     eHighScore = highScore
                 }
+            }
+            if(standard){
+                sWins += 1;
+            } else{
+                eWins += 1
             }
             guessesInRound = 0;
         }
@@ -89,7 +96,9 @@ class GamePlay extends React.Component{
             highScore,
             finishedFirstGuess,
             sHighScore,
-            eHighScore
+            eHighScore,
+            sWins,
+            eWins
         })
         e.preventDefault();
     }
@@ -145,6 +154,7 @@ class GamePlay extends React.Component{
                     <h3>Number of guesses: {this.state.guessesTotal}</h3>
                     <h3>Number of guesses per round: {this.state.guessesInRound}</h3>
                     {this.state.finishedFirstGuess ? <h3>High Score: {this.state.standard ? this.state.sHighScore : this.state.eHighScore} in one round</h3> : null}
+                    <h3>Number of Wins: {this.state.standard ? this.state.sWins : this.state.eWins}</h3>
                 </section>
             </div>
         )
